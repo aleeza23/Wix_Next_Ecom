@@ -1,0 +1,35 @@
+{
+  "name": "mobiles-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@wix/ecom": "^1.0.540",
+    "@wix/members": "^1.0.77",
+    "@wix/redirects": "^1.0.44",
+    "@wix/sdk": "^1.9.1",
+    "@wix/stores": "^1.0.141",
+    "axios": "^1.7.7",
+    "emailjs-com": "^3.2.0",
+    "isomorphic-dompurify": "^2.9.0",
+    "js-cookie": "^3.0.5",
+    "next": "14.2.2",
+    "nodemailer": "^6.9.15",
+    "react": "^18",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^18",
+    "timeago.js": "^4.0.2",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
