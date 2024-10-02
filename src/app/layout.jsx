@@ -7,8 +7,8 @@ import { WixClientContextProvider } from "@/context/wixContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Lama Dev E-Commerce Application",
-  description: "A complete e-commerce application with Next.js and Wix",
+  title: "Chaudhry Mobiles",
+  description: "Discover the latest smartphones and accessories at Chaudhry Mobiles your one-stop online shop for top mobile brands unbeatable prices and exceptional customer service. Shop now for fast shipping and exclusive deals.",
 };
 
 export default function RootLayout({ children }) {
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <WixClientContextProvider>
           <Navbar />
           {children}
-          
+
         </WixClientContextProvider>
       </body>
     </html>

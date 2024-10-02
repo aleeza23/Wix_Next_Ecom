@@ -78,7 +78,7 @@ const NavIcons = () => {
           {counter}
         </div>
       </div>
-      {isCartOpen && <CartModal ref={cartRef} />}
+      {isCartOpen && <CartModal reference={cartRef} />}
     </div>
   );
 };

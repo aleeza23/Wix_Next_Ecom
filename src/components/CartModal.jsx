@@ -6,14 +6,14 @@ import { useWixClient } from '@/hooks/useWixClient';
 import emailjs from 'emailjs-com';
 import { useRouter } from 'next/navigation'
 
-const CartModal = ({ref}) => {
+const CartModal = ({ reference }) => {
     const wixClient = useWixClient();
     const { cart, isLoading, removeItem } = useCartStore();
     const router = useRouter();
 
 
     return (
-        <div ref={ref} className="w-max absolute p-4 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white top-12 right-0 flex flex-col gap-6 z-20">
+        <div ref={reference} className="w-max absolute p-4 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white top-12 right-0 flex flex-col gap-6 z-20">
             {cart.lineItems?.length === 0 ? (
                 <div className="">Cart is Empty</div>
             ) : (
