@@ -11,6 +11,7 @@ const SuccessPage = () => {
     }
   }, []);
 
+
   return (
     <div className="container overflow-hidden">
       <div className="flex flex-col gap-6 items-center justify-center h-[calc(100vh-5rem)] overflow-y-hidden">
