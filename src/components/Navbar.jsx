@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative">
       {/* MOBILE */}
-      <div className="h-full flex items-center justify-between md:hidden">
+      <div className="h-full flex items-center justify-between md:hidden ">
         <Link href="/" className="flex justify-center items-center my-auto">
           <Image src="/logo.png" alt="" width={120} height={120} />
         </Link>
