@@ -115,7 +115,7 @@ const CheckoutPage = () => {
                                     </div>
                                 ))}
 
-                                <h4 className="flex flex-wrap mt-auto gap-4 px-4 py-4 bg-pink-400 text-base text-white">
+                                <h4 className="flex flex-wrap mt-auto gap-4 px-4 py-4 bg-blue-600 text-base text-white">
                                     Total <span className="ml-auto">{cart.lineItems?.length > 0 ? `₨${calculateTotal().toLocaleString()}` : '₨0.00'}</span>
                                 </h4>
                             </div>
@@ -172,7 +172,7 @@ const CheckoutPage = () => {
 
                         <div className="flex gap-4 max-md:flex-col mt-8">
                             <button type="button" onClick={handleCancel} className="rounded-md px-6 py-3 w-full text-sm tracking-wide bg-transparent hover:bg-gray-100 border border-gray-300 text-gray-600">Cancel</button>
-                            <button type="submit" className="rounded-md px-6 py-3 w-full text-sm tracking-wide text-white bg-pink-400 hover:bg-pink-700">Place Order</button>
+                            <button type="submit" className="rounded-md px-6 py-3 w-full text-sm tracking-wide text-white bg-blue-600 hover:bg-blue-600">Place Order</button>
                         </div>
                     </form>
                 </div>

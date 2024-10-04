@@ -12,21 +12,26 @@ const CategoryList = async () => {
         {cats.items.map((item) => (
           <Link
             href={`/list?cat=${item.slug}`}
-            className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
+            className="flex-shrink-0 w-1/9 "
             key={item._id}
           >
-            <div className="relative bg-slate-100 w-full h-96">
-              <Image
-                src={item.media?.mainMedia?.image?.url || "cat.png"}
-                alt=""
-                fill
-                sizes="20vw"
-                className="object-cover"
-              />
+            <div className="relative h-full w-32 rounded-lg overflow-hidden">
+              <div className="relative group bg-gray-100 h-32 w-32 ">
+                <Image
+                  src={item.media?.mainMedia?.image?.url || "cat.png"}
+                  alt={item.name}
+                  fill
+                  sizes="20vw"
+                  className="object-contain w-full group-hover:scale-105 transition-transform duration-200 h-full" // Scale up on hover
+                />
+                
+              </div>
+              <small className="p-4 font-medium text-sm  text-center">
+                  {item.name}
+                </small>
             </div>
-            <h1 className="mt-8 font-light text-xl tracking-wide">
-              {item.name}
-            </h1>
+
+
           </Link>
         ))}
       </div>

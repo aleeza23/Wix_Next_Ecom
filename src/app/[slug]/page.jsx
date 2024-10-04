@@ -2,10 +2,8 @@ import Add from "@/components/Add";
 import CustomizeProducts from "@/components/CustomiseProduct";
 import Footer from "@/components/Footer";
 import ProductImages from "@/components/ProductImages";
-import Reviews from "@/components/Reviews";
 import { wixClientServer } from "@/lib/wixClientServer";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import DOMPurify from 'isomorphic-dompurify';
 
 
@@ -23,11 +21,11 @@ const SinglePage = async ({ params }) => {
 
 
   const product = products.items[0];
-  
+
 
   return (
     <>
-      <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative flex flex-col lg:flex-row gap-16">
+      <div className="px-4 mt-10 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative flex flex-col lg:flex-row gap-16">
         {/* IMG */}
         <div className="w-full lg:w-1/2 lg:sticky top-20 h-max">
           <ProductImages items={product.media?.items} />
@@ -38,7 +36,8 @@ const SinglePage = async ({ params }) => {
           <p
             className="text-gray-500"
             dangerouslySetInnerHTML={{
-              __html: DOMPurify.sanitize(product.description)}}
+              __html: DOMPurify.sanitize(product.description)
+            }}
           />
           <div className="h-[2px] bg-gray-100" />
           {product.price?.price === product.price?.discountedPrice ? (
@@ -74,12 +73,7 @@ const SinglePage = async ({ params }) => {
               <p>{section.description}</p>
             </div>
           ))}
-          <div className="h-[2px] bg-gray-100" />
-          {/* REVIEWS */}
-          <h1 className="text-2xl">User Reviews</h1>
-          <Suspense fallback="Loading...">
-            <Reviews productId={product._id} />
-          </Suspense>
+          {/* <div className="h-[2px] bg-gray-100" /> */}
         </div>
       </div>
       <Footer />

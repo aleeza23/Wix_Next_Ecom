@@ -10,3 +10,33 @@
 .scrollbar-hide{
   scrollbar-width: none;
 }
+/* globals.css or a relevant CSS file */
+.nav-link {
+  @apply relative text-white transition-all duration-300;
+}
+
+.nav-link::after {
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform duration-300 ease-in-out;
+  content: '';
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  @apply transform scale-x-100;
+}
+
+@keyframes rotate-horizontal {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.group:hover  .rotate-hover {
+  animation: rotate-horizontal 1s ease-in-out;
+}

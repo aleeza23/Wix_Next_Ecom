@@ -13,8 +13,8 @@ const Menu = () => {
       <div className="flex gap-9 items-center">
       <NavIcons />
       <Image
-        src="/menu.png"
-        alt=""
+        src="/menu-modified.png"
+        alt="menu"
         width={28}
         height={28}
         className="cursor-pointer"

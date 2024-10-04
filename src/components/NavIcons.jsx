@@ -63,8 +63,8 @@ const NavIcons = () => {
         </div>
       )} */}
       <Image
-        src="/notification.png"
-        alt=""
+        src="/notification-modified.png"
+        alt="notification-icon"
         width={22}
         height={22}
         className="cursor-pointer w-[28px] lg:w-[22px]"
@@ -73,12 +73,12 @@ const NavIcons = () => {
         className="relative cursor-pointer"
         onClick={() => setIsCartOpen((prev) => !prev)}
       >
-        <Image src="/cart.png" alt="" width={22} height={22}  className="  w-[28px] lg:w-[22px]"/>
-        <div className="absolute -top-4 -right-4 w-6 h-6 bg-lama rounded-full text-white text-sm flex items-center justify-center">
+        <Image src="/cart-modified.png" alt="cart-icon" width={22} height={22}  className="  w-[28px] lg:w-[22px]"/>
+        <div className="absolute -top-4 -right-4 w-6 h-6 bg-blue-600 rounded-full text-white text-sm flex items-center justify-center">
           {counter}
         </div>
       </div>
-      {isCartOpen && <CartModal reference={cartRef} />}
+      {isCartOpen && <CartModal isOpen={isCartOpen} setIsOpen={setIsCartOpen} />}
     </div>
   );
 };

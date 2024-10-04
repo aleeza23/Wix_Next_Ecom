@@ -1,5 +1,6 @@
 import Filter from "@/components/Filter";
 import Footer from "@/components/Footer";
+import NewProducts from "@/components/NewProducts";
 import ProductList from "@/components/ProductList";
 import Skeleton from "@/components/Skeleton";
 import { wixClientServer } from "@/lib/wixClientServer";
@@ -36,7 +37,7 @@ const ListPage = async ({ searchParams }) => {
       {/* PRODUCTS */}
       <h1 className="mt-12 text-xl font-semibold">{cat?.collection?.name} For You!</h1>
       <Suspense fallback={<Skeleton />}>
-        <ProductList
+        <NewProducts
           categoryId={
             cat.collection?._id || "00000000-000000-000000-000000000001"
           }
