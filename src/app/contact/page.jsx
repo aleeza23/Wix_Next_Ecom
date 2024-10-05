@@ -60,7 +60,7 @@ const ContactUs = () => {
         <>
             <div className="banner">
                 <Image
-                    src="/1.png" // Replace with your actual image path
+                    src="/1.webp" // Replace with your actual image path
                     alt="Banner"
                     width={1200} // Set the desired width
                     height={300} // Set the desired height
