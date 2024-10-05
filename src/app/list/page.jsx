@@ -29,7 +29,7 @@ const ListPage = async ({ searchParams }) => {
           </button>
         </div>
         <div className="relative w-1/3">
-          <Image src="/woman.png" alt="" fill className="object-contain" />
+          <Image src="/woman.webp" alt="" fill className="object-contain" />
         </div>
       </div>
       {/* FILTER */}
