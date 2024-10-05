@@ -6,7 +6,7 @@ export const topBanner = [
         subtitle: 'Galaxy S13 lite love the price.',
         price: 'From PKR 12,9999',
         actionText: 'Buy Now',
-        actionHref: '#',
+        actionHref: '/list',
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const topBanner = [
         subtitle: 'Smartwatch 7 light on price.',
         price: 'From PKR 3999.',
         actionText: 'Learn More',
-        actionHref: '#',
+        actionHref: '/list',
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const topBanner = [
         subtitle: 'Five bold colors Rs123.0 each.',
         price: 'From PKR 299999',
         actionText: 'Buy Now',
-        actionHref: '#',
+        actionHref: '/list',
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const topBanner = [
         subtitle: '5th generation AirPods.',
         price: 'From PKR 400999',
         actionText: 'Learn More',
-        actionHref: '#',
+        actionHref: '/list',
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const topBanner = [
         subtitle: 'Headset max 3rd generation',
         price: 'From PKR 550000',
         actionText: 'Buy Now',
-        actionHref: '#',
+        actionHref: '/list',
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ export const topBanner = [
         subtitle: 'Mac book pro. new arrival',
         price: 'From PKR 350000',
         actionText: 'Learn More',
-        actionHref: '#',
+        actionHref: '/list',
     },
 ];
 
@@ -63,7 +63,7 @@ export const bottomBanner = [
         subtitle: 'Galaxy S13 lite love the price.',
         price: 'From PKR 429999',
         actionText: 'Learn More',
-        actionHref: '#',
+        actionHref: '/list',
     },
     {
         id: 2,
@@ -72,7 +72,7 @@ export const bottomBanner = [
         subtitle: 'Smartwatch 7 light on price.',
         price: 'From PKR 396000',
         actionText: 'Buy now',
-        actionHref: '#',
+        actionHref: '/list',
     },
     {
         id: 3,
@@ -81,6 +81,6 @@ export const bottomBanner = [
         subtitle: 'Five bold colors 99 each.',
         price: 'From PKR 290899',
         actionText: 'Learn More',
-        actionHref: '#',
+        actionHref: '/list',
     },
 ];
