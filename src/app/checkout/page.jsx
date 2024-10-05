@@ -15,11 +15,9 @@ const CheckoutPage = () => {
 
     const [formData, setFormData] = useState({
         firstName: '',
-        lastName: '',
-        email: '',
+        lastName: '',        
         phone: '',
-        address: '',
-        city: '',
+        address: '',        
     });
 
     const [error, setError] = useState('');
@@ -39,7 +37,7 @@ const CheckoutPage = () => {
         e.preventDefault();
 
         // Validate form data
-        if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.address || !formData.city) {
+        if (!formData.firstName || !formData.lastName || !formData.phone || !formData.address) {
             setError('Please fill in all required fields.');
             return;
         }
@@ -65,8 +63,7 @@ const CheckoutPage = () => {
 
         const orderDetails = {
             from_name: `${formData.firstName} ${formData.lastName}`, // Sender's name
-            from_email: formData.email,
-            reply_to: formData.email,
+            address: formData.address,
             phone: formData.phone,
             total: `₨${calculateTotal().toLocaleString()}`, // Total amount
             items: items // Ensure this is structured correctly for the template
@@ -147,33 +144,21 @@ const CheckoutPage = () => {
                                     <div>
                                         <input type="text" placeholder="Last Name" name="lastName" value={formData.lastName} onChange={handleChange} required
                                             className="px-4 py-3 bg-gray-100 focus:bg-transparent text-gray-800 w-full text-sm rounded-md focus:outline-blue-600" />
-                                    </div>
-                                    <div>
-                                        <input type="email" placeholder="Email" name="email" value={formData.email} onChange={handleChange} required
-                                            className="px-4 py-3 bg-gray-100 focus:bg-transparent text-gray-800 w-full text-sm rounded-md focus:outline-blue-600" />
-                                    </div>
+                                    </div>                                   
                                     <div>
                                         <input type="number" placeholder="Phone No." name="phone" value={formData.phone} onChange={handleChange} required
                                             className="px-4 py-3 bg-gray-100 focus:bg-transparent text-gray-800 w-full text-sm rounded-md focus:outline-blue-600" />
                                     </div>
-                                </div>
-                            </div>
-
-                            <div className="mt-8">
-                                <h3 className="text-base text-gray-800 mb-4">Shipping Address</h3>
-                                <div className="grid md:grid-cols-2 gap-4">
                                     <div>
                                         <input type="text" placeholder="Address" name="address" value={formData.address} onChange={handleChange} required
                                             className="focus:ring-2 [.validated_&]:invalid:border-pink-600 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-pink-200 px-4 py-3 peer bg-gray-100 focus:bg-transparent text-gray-800 w-full text-sm rounded-md focus:outline-blue-600" />
                                     </div>
-                                    <div>
-                                        <input type="text" placeholder="City" name="city" value={formData.city} onChange={handleChange} required
-                                            className="px-4 py-3 bg-gray-100 focus:bg-transparent text-gray-800 w-full text-sm rounded-md focus:outline-blue-600" />
-                                    </div>
-                                </div>
-                                {error && <p className="text-red-600 mt-3 ms-2">{error}</p>}
 
+                                    {error && <p className="text-red-600 mt-3 ms-2">{error}</p>}
+                                </div>
                             </div>
+
+   
 
                             <div className="mt-8 flex gap-4 justify-between">
                                 <button type="button" onClick={handleCancel} className="w-full rounded-md border   py-3 px-4 text-base font-medium text-blue-600 focus:outline-none">Cancel</button>

@@ -24,7 +24,7 @@ const SuccessPage = () => {
         )}
         <h1 className="text-4xl sm:text-6xl text-green-700 text-center">Order Placed!</h1>
         <h2 className="text-xl font-medium text-center mx-auto">
-          Thank you for your order! We have received your order and sent the invoice to your email.
+          Thank you for your order! We have received your order and will inform you soon!.
         </h2>
       </div>
     </div>
