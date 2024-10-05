@@ -67,31 +67,32 @@ const ContactUs = () => {
                     className="w-full h-auto" // Make the image responsive
                 />
             </div>
-            <section className="bg-white ">
-                <div className="container px-6 py-12 mx-auto">
-                    <div>
-                        <p className="font-medium text-blue-500 dark:text-blue-400">Contact us</p>
+            <section className="bg-white">
+    <div className="container px-6 py-12 mx-auto">
+        <div>
+            <p className="font-medium text-blue-500">Contact us</p>
 
-                        <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">We’d love to hear from you</h1>
+            <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl">We’d love to hear from you</h1>
 
-                        <p className="mt-3 text-gray-500 font-light ">We are always here to chat about your mobile needs.</p>
-                    </div>
+            <p className="mt-3 text-gray-500 font-light">We are always here to chat about your mobile needs.</p>
+        </div>
 
-                    <div className="grid grid-cols-1 gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                        {contactOptions.map((option, index) => (
-                            <div key={index} className="p-4 rounded-lg bg-blue-50 md:p-6 dark:bg-gray-800">
-                                <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 dark:bg-gray-700">
-                                    {option.icon}
-                                </span>
+        <div className="grid grid-cols-1 gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {contactOptions.map((option, index) => (
+                <div key={index} className="p-4 rounded-lg bg-blue-50 md:p-6">
+                    <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80">
+                        {option.icon}
+                    </span>
 
-                                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">{option.title}</h2>
-                                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{option.description}</p>
-                                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">{option.contactInfo}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <h2 className="mt-4 text-base font-medium text-gray-800">{option.title}</h2>
+                    <p className="mt-2 text-sm text-gray-500">{option.description}</p>
+                    <p className="mt-2 text-sm text-blue-500">{option.contactInfo}</p>
                 </div>
-            </section>
+            ))}
+        </div>
+    </div>
+</section>
+
 
             <Footer />
         </>

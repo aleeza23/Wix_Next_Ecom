@@ -1,7 +1,7 @@
 export const topBanner = [
     {
         id: 1,
-        imgSrc: '/banner-01.jpg',
+        imgSrc: '/banner-01.webp',
         title: 'Big saving',
         subtitle: 'Galaxy S13 lite love the price.',
         price: 'From PKR 12,9999',
@@ -10,7 +10,7 @@ export const topBanner = [
     },
     {
         id: 2,
-        imgSrc: '/banner-02.jpg',
+        imgSrc: '/banner-02.webp',
         title: '15% off',
         subtitle: 'Smartwatch 7 light on price.',
         price: 'From PKR 3999.',
@@ -19,7 +19,7 @@ export const topBanner = [
     },
     {
         id: 3,
-        imgSrc: '/banner-03.jpg',
+        imgSrc: '/banner-03.webp',
         title: 'Flat 20% off',
         subtitle: 'Five bold colors Rs123.0 each.',
         price: 'From PKR 299999',
@@ -28,7 +28,7 @@ export const topBanner = [
     },
     {
         id: 4,
-        imgSrc: '/banner-04.jpg',
+        imgSrc: '/banner-04.webp',
         title: 'Best price',
         subtitle: '5th generation AirPods.',
         price: 'From PKR 400999',
@@ -37,7 +37,7 @@ export const topBanner = [
     },
     {
         id: 5,
-        imgSrc: '/banner-05.jpg',
+        imgSrc: '/banner-05.webp',
         title: 'Over 50%',
         subtitle: 'Headset max 3rd generation',
         price: 'From PKR 550000',
@@ -46,7 +46,7 @@ export const topBanner = [
     },
     {
         id: 6,
-        imgSrc: '/banner-06.jpg',
+        imgSrc: '/banner-06.webp',
         title: 'Save extra',
         subtitle: 'Mac book pro. new arrival',
         price: 'From PKR 350000',
@@ -58,7 +58,7 @@ export const topBanner = [
 export const bottomBanner = [
     {
         id: 1,
-        imgSrc: '/bottombanner-01.jpg',
+        imgSrc: '/bottombanner-01.webp',
         title: 'Big saving',
         subtitle: 'Galaxy S13 lite love the price.',
         price: 'From PKR 429999',
@@ -67,7 +67,7 @@ export const bottomBanner = [
     },
     {
         id: 2,
-        imgSrc: '/bottombanner-02.jpg',
+        imgSrc: '/bottombanner-02.webp',
         title: '15% off',
         subtitle: 'Smartwatch 7 light on price.',
         price: 'From PKR 396000',
@@ -76,7 +76,7 @@ export const bottomBanner = [
     },
     {
         id: 3,
-        imgSrc: '/bottombanner-03.jpg',
+        imgSrc: '/bottombanner-03.webp',
         title: 'Flat 20% off',
         subtitle: 'Five bold colors 99 each.',
         price: 'From PKR 290899',

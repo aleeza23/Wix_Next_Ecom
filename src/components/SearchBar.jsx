@@ -28,7 +28,7 @@ const SearchBar = () => {
         className="flex-1 bg-transparent outline-none"
       />
       <button className="cursor-pointer">
-        <Image src="/search.png" alt="" width={16} height={16} />
+        <Image src="/search.webp" alt="" width={16} height={16} />
       </button>
     </form>
   );

@@ -20,7 +20,7 @@ const Menu = () => {
       <div className="flex gap-9 items-center">
         <NavIcons />
         <Image
-          src="/menu-modified.png"
+          src="/menu-modified.webp"
           alt="menu"
           width={22}
           height={22}

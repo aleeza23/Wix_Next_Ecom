@@ -7,7 +7,7 @@ const CategoryList = async () => {
   const cats = await wixClient.collections.queryCollections().find();
 
   return (
-    <div className="px-4 overflow-x-scroll scrollbar-hide">
+    <div id="category" className="px-4 overflow-x-scroll scrollbar-hide">
       <div className="flex gap-4 md:gap-8">
         {cats.items.map((item) => (
           <Link
@@ -18,7 +18,7 @@ const CategoryList = async () => {
             <div className="relative h-full w-32 rounded-lg overflow-hidden">
               <div className="relative group bg-gray-100 h-32 w-32 ">
                 <Image
-                  src={item.media?.mainMedia?.image?.url || "cat.png"}
+                  src={item.media?.mainMedia?.image?.url || "cat.webp"}
                   alt={item.name}
                   fill
                   sizes="20vw"

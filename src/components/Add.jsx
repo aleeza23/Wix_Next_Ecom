@@ -54,7 +54,7 @@ const Add = ({ productId, variantId, stockNumber }) => {
         </div>
         <button
           onClick={() => addItem(wixClient, productId, variantId, quantity, setIsCartOpen)}
-          disabled={isLoading}
+          disabled={isLoading || stockNumber < 1}
           className="w-36 text-sm rounded-3xl ring-1 ring-blue-600 text-blue-600 py-2 px-4 hover:bg-blue-600 hover:text-white disabled:cursor-not-allowed disabled:bg-blue-200 disabled:ring-0 disabled:text-white disabled:ring-none"
         >
           Add to Cart

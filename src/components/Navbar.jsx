@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* MOBILE */}
       <div className="h-full flex items-center justify-between md:hidden ">
         <Link href="/" className="flex justify-center items-center -ms-7 my-auto">
-          <Image src="/logo-modified.png" alt="Logo" width={110} height={110} />
+          <Image src="/logo-modified.webp" alt="Logo" width={110} height={110} />
         </Link>
         <Menu />
       </div>
@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* LEFT */}
         <div className="w-1/3 xl:w-2/3 flex items-center gap-12">
           <Link href="/" className="mt-10">
-            <Image src="/logo-modified.png" alt="Logo" width={120} height={120} />
+            <Image src="/logo-modified.webp" alt="Logo" width={120} height={120} />
           </Link>
           <div className="hidden xl:flex gap-4 text-white">
             <Link href="/" className="nav-link">Home</Link>
