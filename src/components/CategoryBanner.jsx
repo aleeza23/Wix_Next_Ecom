@@ -19,7 +19,7 @@ const CategoryBanners = ({ banner }) => {
                             height={300}                           
                             className="w-full h-auto transition-transform duration-500 transform group-hover:scale-110 group-hover:translate-x-2"
                         />
-                        <div className="absolute top-0 left-0 p-4 w-[70%] lg:w-[60%] text-black h-full flex flex-col justify-center">
+                        <div className="absolute top-0 left-0 p-4 w-[70%] lg:w-1/2 text-black h-full flex flex-col justify-center">
                             <h5 className=" text-md sm:text-4xl md:text-2xl lg:text-lg font-semibold ">
                                 {banner.subtitle}
                             </h5>
@@ -27,7 +27,7 @@ const CategoryBanners = ({ banner }) => {
                             <div className="mt-4">
                                 <Link
                                     href={banner.actionHref}
-                                    className="inline-block py-1 px-3 sm:px-4 text-sm lg:text-xs sm:py-2  bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+                                    className="inline-block py-1 px-3 sm:px-4 text-sm lg:text-xs sm:py-2 font-light  bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
                                 >
                                     {banner.actionText}
                                 </Link>

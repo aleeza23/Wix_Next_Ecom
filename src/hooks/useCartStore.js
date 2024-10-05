@@ -18,27 +18,39 @@ export const useCartStore = create((set) => ({
       set((prev) => ({ ...prev, isLoading: false }));
     }
   },
-  addItem: async (wixClient, productId, variantId, quantity) => {
-    set((state) => ({ ...state, isLoading: true }));
-    const response = await wixClient.currentCart.addToCurrentCart({
-      lineItems: [
-        {
-          catalogReference: {
-            appId: process.env.NEXT_PUBLIC_WIX_APP_ID,
-            catalogItemId: productId,
-            ...(variantId && { options: { variantId } }),
-          },
-          quantity: quantity,
-        },
-      ],
-    });
 
-    set({
-      cart: response.cart,
-      counter: response.cart?.lineItems.length,
-      isLoading: false,
-    });
+
+  addItem: async (wixClient, productId, variantId, quantity, setIsCartOpen) => {
+    set((state) => ({ ...state, isLoading: true }));
+
+    try {
+      const response = await wixClient.currentCart.addToCurrentCart({
+        lineItems: [
+          {
+            catalogReference: {
+              appId: process.env.NEXT_PUBLIC_WIX_APP_ID,
+              catalogItemId: productId,
+              ...(variantId && { options: { variantId } }),
+            },
+            quantity: quantity,
+          },
+        ],
+      });
+
+      set({
+        cart: response.cart,
+        counter: response.cart?.lineItems.length,
+        isLoading: false,
+      });
+
+      // Open the cart modal after adding item to the cart
+      setIsCartOpen(true);
+    } catch (error) {
+      console.error('Error adding item to cart:', error);
+      set((state) => ({ ...state, isLoading: false }));
+    }
   },
+
   removeItem: async (wixClient, itemId) => {
     set((state) => ({ ...state, isLoading: true }));
     const response = await wixClient.currentCart.removeLineItemsFromCurrentCart(

@@ -1,18 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { useEffect } from "react";
 import CartModal from "./CartModal";
 import { useWixClient } from "@/hooks/useWixClient";
 import { useCartStore } from "@/hooks/useCartStore";
 
 const NavIcons = () => {
- 
-  const [isCartOpen, setIsCartOpen] = useState(false);
 
+  const { wixClient, isCartOpen, setIsCartOpen } = useWixClient();
 
-
-  const wixClient = useWixClient();
   // TEMPORARY
   // const isLoggedIn = false;
   const { cart, counter, getCart } = useCartStore();
@@ -23,25 +20,7 @@ const NavIcons = () => {
     getCart(wixClient);
   }, [wixClient, getCart]);
 
-  // Create a ref for the cart modal
-  const cartRef = useRef(null);
 
-  // Close the cart modal when clicking outside of it
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (cartRef.current && !cartRef.current.contains(event.target)) {
-        setIsCartOpen(false);
-      }
-    };
-
-    // Add event listener
-    document.addEventListener("mousedown", handleClickOutside);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
 
   return (
@@ -67,13 +46,13 @@ const NavIcons = () => {
         alt="notification-icon"
         width={22}
         height={22}
-        className="cursor-pointer w-[28px] lg:w-[22px]"
+        className="cursor-pointer "
       />
       <div
         className="relative cursor-pointer"
         onClick={() => setIsCartOpen((prev) => !prev)}
       >
-        <Image src="/cart-modified.png" alt="cart-icon" width={22} height={22}  className="  w-[28px] lg:w-[22px]"/>
+        <Image src="/cart-modified.png" alt="cart-icon" width={22} height={22} className=" " />
         <div className="absolute -top-4 -right-4 w-6 h-6 bg-blue-600 rounded-full text-white text-sm flex items-center justify-center">
           {counter}
         </div>

@@ -24,7 +24,7 @@ const HomePage = async () => {
     <div>
       <Slider />
 
-      <div className="mt-20 px-4 md:px-8 lg:px-16 xl:px-20 2xl:px-64">
+      <div className=" mt-10 sm:mt-20 px-4 md:px-8 lg:px-16 xl:px-20 2xl:px-64">
         <strong className="text-2xl ">
           Trending Categories
         </strong>

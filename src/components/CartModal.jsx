@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import { FaTimes } from 'react-icons/fa';
 
 const CartModal = ({  isOpen, setIsOpen }) => {
-    const wixClient = useWixClient();
+    const { wixClient } = useWixClient();
     const { cart, isLoading, removeItem } = useCartStore();
     const router = useRouter();
 
@@ -52,7 +52,7 @@ const CartModal = ({  isOpen, setIsOpen }) => {
                 </button>
 
                 {cart.lineItems?.length === 0 ? (
-                    <div>Cart is Empty</div>
+                    <div className='flex justify-center items-center mt-20'>Cart is Empty</div>
                 ) : (
                     <>
                         <h6 className="text-xl mt-10 font-bold">Shopping Cart</h6>

@@ -77,15 +77,15 @@ const CustomizeProducts = ({ productId, variants, productOptions }) => {
                 </li>
               ) : (
                 <li
-                  className="ring-1 ring-lama text-lama rounded-md py-1 px-4 text-sm"
+                  className="ring-1 ring-blue-600 text-blue-600 rounded-md py-1 px-4 text-sm"
                   style={{
                     cursor: disabled ? "not-allowed" : "pointer",
                     backgroundColor: selected
-                      ? "#f35c7a"
+                      ? "#2563eb"
                       : disabled
                       ? "#FBCFE8"
                       : "white",
-                    color: selected || disabled ? "white" : "#f35c7a",
+                    color: selected || disabled ? "white" : "#2563eb",
                     boxShadow: disabled ? "none" : "",
                   }}
                   key={choice.description}

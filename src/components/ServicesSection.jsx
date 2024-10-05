@@ -49,7 +49,7 @@ const ServiceSection = () => {
                                     <span className="service-title text-md font-bold">
                                         {service.title}
                                     </span>
-                                    <p className="service-desc mt-2 text-sm text-gray-600">
+                                    <p className="mt-2 text-sm font-light text-gray-600">
                                         {service.description}
                                     </p>
                                 </div>

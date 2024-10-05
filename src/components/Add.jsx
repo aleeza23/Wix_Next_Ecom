@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const Add = ({ productId, variantId, stockNumber }) => {
   const [quantity, setQuantity] = useState(1);
+  const { setIsCartOpen } = useWixClient();
 
   const handleQuantity = (type) => {
     if (type === "d" && quantity > 1) {
@@ -16,7 +17,7 @@ const Add = ({ productId, variantId, stockNumber }) => {
     }
   };
 
-  const wixClient = useWixClient();
+  const { wixClient } = useWixClient();
   const { addItem, isLoading } = useCartStore();
 
   return (
@@ -45,16 +46,16 @@ const Add = ({ productId, variantId, stockNumber }) => {
             <div className="text-xs">Product is out of stock</div>
           ) : (
             <div className="text-xs">
-              Only <span className="text-orange-500">{stockNumber} items</span>{" "}
+              Only <span className="text-blue-500">{stockNumber} items</span>{" "}
               left!
               <br /> {"Don't"} miss it
             </div>
           )}
         </div>
         <button
-          onClick={() => addItem(wixClient, productId, variantId, quantity)}
+          onClick={() => addItem(wixClient, productId, variantId, quantity, setIsCartOpen)}
           disabled={isLoading}
-          className="w-36 text-sm rounded-3xl ring-1 ring-lama text-lama py-2 px-4 hover:bg-lama hover:text-white disabled:cursor-not-allowed disabled:bg-pink-200 disabled:ring-0 disabled:text-white disabled:ring-none"
+          className="w-36 text-sm rounded-3xl ring-1 ring-blue-600 text-blue-600 py-2 px-4 hover:bg-blue-600 hover:text-white disabled:cursor-not-allowed disabled:bg-blue-200 disabled:ring-0 disabled:text-white disabled:ring-none"
         >
           Add to Cart
         </button>
