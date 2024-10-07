@@ -1,7 +1,30 @@
+# Mobile E-Commerce Website
+
+This e-commerce website integrates Wix's robust platform with the performance and scalability of Next.js. It features a user-friendly interface, dynamic product listings, and checkout processes.
+
+## Features
+
+- 📱 Modern and responsive design
+- 🛒 Dynamic product listings
+- 🛍️ Add to cart functionality
+- 🎨 Product variants selection
+- 🔍 Search and filter options
+
+
+
+![Home Page](path/to/home-page-image.png)
+![Product Listing](path/to/product-listing-image.png)
+![Checkout Page](path/to/checkout-page-image.png)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/mobile-ecommerce-website.git
+   
 First, run the development server:
 
 ```bash
