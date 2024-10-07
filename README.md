@@ -15,6 +15,13 @@ This e-commerce website integrates Wix's robust platform with the performance an
 ![Home Page](demo-images/2nd.PNG)
 ![Product Listing](demo-images/3rd.PNG)
 ![Checkout Page](demo-images/4th.PNG)
+![Checkout Page](demo-images/5th.PNG)
+![Checkout Page](demo-images/6th.PNG)
+![Checkout Page](demo-images/7th.PNG)
+![Checkout Page](demo-images/8th.PNG)
+![Checkout Page](demo-images/9th.PNG)
+![Checkout Page](demo-images/10th.PNG)
+![Checkout Page](demo-images/1st.png)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
