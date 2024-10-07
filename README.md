@@ -15,12 +15,12 @@ This e-commerce website integrates Wix's robust platform with the performance an
 ![Home Page](demo-images/2nd.PNG)
 ![Product Listing](demo-images/3rd.PNG)
 ![Checkout Page](demo-images/4th.PNG)
-![Checkout Page](demo-images/5th.PNG)
-![Checkout Page](demo-images/6th.PNG)
+![Checkout Page](demo-images/5th.png)
+![Checkout Page](demo-images/6th.png)
 ![Checkout Page](demo-images/7th.PNG)
-![Checkout Page](demo-images/8th.PNG)
-![Checkout Page](demo-images/9th.PNG)
-![Checkout Page](demo-images/10th.PNG)
+![Checkout Page](demo-images/8th.png)
+![Checkout Page](demo-images/9th.png)
+![Checkout Page](demo-images/10th.png)
 ![Checkout Page](demo-images/1st.png)
 
 
