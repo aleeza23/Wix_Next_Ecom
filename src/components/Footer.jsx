@@ -102,7 +102,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-5 pt-7">
                     <span className="text-sm font-normal text-gray-400">
-                        <Link href="https://pagedone.io/" className="">©chaudhrymobiles</Link> 2024, All rights reserved.
+                        <Link href="https://pagedone.io/" className="">©Chaudhry Mobiles</Link> 2024, Developed by <Link href="https://www.linkedin.com/in/aleezarubab/" className="underline text-[#4ad1f2]">Aleeza R.</Link>. All rights reserved.
                     </span>
                    
                 </div>
